@@ -35,7 +35,3 @@ docker run -d -p 5000:5000 python-docker
 6️⃣ Go to 👉 http://localhost:5000/
 
 ---
-
-## Details
-
-The c
