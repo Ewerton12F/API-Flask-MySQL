@@ -9,10 +9,10 @@ REST API
 * Download [Python](https://www.python.org/downloads/)
 * Donwload [Docker](https://docs.docker.com/desktop/windows/install/)
 
-2️⃣ - Download files [here](https://github.com/Ewerton12F/FastAPI-Trainer-PokeAPI/archive/refs/heads/master.zip) or clone the project 👇
+2️⃣ - Download files [here](https://github.com/Ewerton12F/API-Flask-MySQL/archive/refs/heads/master.zip) or clone the project 👇
 
 ```shell
-git clone git@github.com:Ewerton12F/FastAPI-Trainer-PokeAPI.git
+git clone git@github.com:Ewerton12F/API-Flask-MySQL.git
 ```
 
 3️⃣ - Once inside the main directory you can create a virtual enviroment and activate it 👇
@@ -26,6 +26,7 @@ virtualenv venv && source venv/bin/activate
 ```shell
 docker build -tag python-docker .
 ```
+
 5️⃣ - Start the Docker Container 👇
 
 ```shell
