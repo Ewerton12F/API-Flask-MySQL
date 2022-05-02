@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block content %}
+<section id="lista_pessoas" class="container-md">
+    <h1 class="my-3">Lista de Pessoas</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Data de Admissão</th>
+                <th scope="col">Editar/Exluir</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for col in res %}
+                <tr>
+                    <td>{{ col[1] }}</td>
+                    <td>{{ col[2] }}</td>
+                    <td>
+                        <div class="btn-group btn-group-sm" role="group" aria-label="Basic mixed styles example">
+                            <a href="{{ url_for('update_pessoa', id_pessoa=col[0]) }}">
+                                <button type="button" class="btn btn-primary">EDIT</button>
+                            </a>
+    
+                            <a href="{{ url_for('del_pessoa', id_pessoa=col[0]) }}">
+                                <button type="button" class="btn btn-danger">DEL</button>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>    
+    <hr/>
+</section>
+{% include 'form.html' %}
+{% endblock %}

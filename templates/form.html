@@ -1,0 +1,43 @@
+{% block content %}
+<section class="container-md">
+    <h1 class="mt-5 mb-3">Formulário de Pessoas</h1>
+    <form action="" method="POST">
+        <div class="mt-3">
+            <label for="id_pessoa" class="form-label">ID Pessoa</label>
+            <input type="number" class="form-control" id="id_pessoa" name="input_id_pessoa"/> <br>
+        </div>
+        
+        <div class="mt-0">
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="nome" name="input_nome"/> <br>
+        </div>
+
+        <div class="mt-0">
+            <label for="rg" class="form-label">RG</label>
+            <input type="text" class="form-control" id="rg" name="input_rg"/> <br>
+        </div>
+        
+        <div class="mt-0">
+            <label for="cpf" class="form-label">CPF</label>
+            <input type="text" class="form-control" id="cpf" name="input_cpf"/> <br>
+        </div>
+        
+        <div class="mt-0">
+            <label for="data_nascimento" class="form-label">Data de Nascimento</label>
+            <input type="date" class="form-control" id="data_nascimento" name="input_data_nascimento"/> <br>
+        </div>
+
+        <div class="mt-0">
+            <label for="data_admissao" class="form-label">Data de Admissão</label>
+            <input type="date" class="form-control" id="data_admissao" name="input_data_admissao"/> <br>
+        </div>
+        
+        <div class="mt-0">
+            <label for="funcao" class="form-label">Função</label>
+            <input type="text" class="form-control" id="funcao" name="input_funcao"/> <br>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Criar Pessoa</button>
+    </form>
+</section>
+{% endblock %}
