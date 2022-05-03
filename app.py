@@ -51,6 +51,15 @@ def read_create_pessoa():
         result = cursor.fetchall()
 
         for row in result:
+            row = list(row)
+            
+            for index, item in enumerate(row):
+                if index == 1:
+                    row[1] = item[:item.find(' ')]
+                    
+                if index == 2:
+                    row[2] = item.strftime("%d-%m-%Y")
+                    
             res.append(row)
         return render_template('list.html', res=res)
 
